@@ -438,40 +438,16 @@ section.tight { padding: 56px 0; }
   margin-top: 14px;
   text-align: center;
 }
-.map-legend {
+.map-header {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 28px;
-  margin-top: 28px;
+  margin: 28px 0 0;
   padding-top: 24px;
   border-top: 1px solid rgba(255,255,255,0.12);
-}
-.map-legend-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: rgba(255,255,255,0.8);
-}
-.map-legend-line {
-  width: 26px;
-  height: 2px;
-  border-radius: 2px;
-  display: inline-block;
-  flex-shrink: 0;
-}
-.map-legend-line.eu { background: var(--gold-400); }
-.map-legend-line.priority { background: var(--coral-400); }
-.map-legend-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  display: inline-block;
-  flex-shrink: 0;
-  background: var(--gold-300);
-  box-shadow: 0 0 0 3px rgba(232,196,119,0.25);
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--white);
 }
 
 /* ---------- Timeline ---------- */
