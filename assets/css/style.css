@@ -331,33 +331,6 @@ section.tight { padding: 56px 0; }
 .bg-navy h2, .bg-navy h3 { color: var(--white); }
 .bg-navy p { color: rgba(255,255,255,0.75); }
 
-/* ---------- Brands ---------- */
-.brand-strip {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  justify-content: center;
-}
-.brand-pill {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 12px 22px;
-  font-weight: 700;
-  color: var(--navy-900);
-  font-size: 1rem;
-  box-shadow: var(--shadow-sm);
-}
-.brand-pill .dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--gold-500);
-}
-
 /* ---------- World map ---------- */
 .map-card {
   background: var(--white);
