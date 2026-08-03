@@ -1,4 +1,4 @@
-// CPBTrade LTD — shared site behaviour
+// CPB Distribution — shared site behaviour
 
 document.addEventListener("DOMContentLoaded", function () {
   var toggle = document.querySelector(".nav-toggle");
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (status) {
         status.textContent =
-          "Opening your email client to send this enquiry to CPBTrade LTD. If nothing opens, email carlfbaretail@gmail.com directly.";
+          "Opening your email client to send this enquiry to CPB Distribution. If nothing opens, email carlfbaretail@gmail.com directly.";
         status.classList.add("show", "ok");
       }
       form.reset();
