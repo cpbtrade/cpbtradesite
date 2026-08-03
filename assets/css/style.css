@@ -338,9 +338,9 @@ section.tight { padding: 56px 0; }
   background: linear-gradient(160deg, var(--navy-950), var(--navy-900) 70%);
   border: 1px solid var(--navy-700);
   border-radius: var(--radius);
-  padding: 32px;
+  padding: 24px;
   box-shadow: var(--shadow-lg);
-  max-width: 980px;
+  max-width: 620px;
   margin: 0 auto;
 }
 .map-card::before {
@@ -360,25 +360,25 @@ section.tight { padding: 56px 0; }
 .world-map-svg .countries path {
   fill: #263c60;
   stroke: rgba(255,255,255,0.1);
-  stroke-width: 0.15;
+  stroke-width: 0.12;
   transition: fill 0.2s ease;
 }
 .world-map-svg .route {
   fill: none;
   stroke-linecap: round;
-  stroke-dasharray: 0.7 0.9;
+  stroke-dasharray: 0.55 0.7;
   animation: route-flow 10s linear infinite;
   cursor: pointer;
   transition: stroke-width 0.2s ease, opacity 0.2s ease;
 }
-.world-map-svg .route:hover { stroke-width: 0.6; opacity: 1; }
+.world-map-svg .route:hover { stroke-width: 0.47; opacity: 1; }
 .world-map-svg .route-eu {
   stroke: var(--gold-400);
-  stroke-width: 0.24;
+  stroke-width: 0.19;
   opacity: 0.8;
 }
 @keyframes route-flow {
-  to { stroke-dashoffset: -64; }
+  to { stroke-dashoffset: -50; }
 }
 .world-map-svg .node-eu {
   cursor: pointer;
@@ -394,9 +394,9 @@ section.tight { padding: 56px 0; }
 .world-map-svg .node-home {
   fill: var(--gold-300);
   stroke: var(--navy-950);
-  stroke-width: 0.24;
+  stroke-width: 0.19;
   cursor: pointer;
-  filter: drop-shadow(0 0 1.2px rgba(232,196,119,0.65));
+  filter: drop-shadow(0 0 1px rgba(232,196,119,0.65));
   transform-box: fill-box;
   transform-origin: center;
   transition: transform 0.2s ease;
@@ -405,7 +405,7 @@ section.tight { padding: 56px 0; }
 .world-map-svg .node-home-ring {
   fill: none;
   stroke: var(--gold-300);
-  stroke-width: 0.24;
+  stroke-width: 0.19;
   transform-box: fill-box;
   transform-origin: center;
   animation: pulse-ring 2.6s ease-out infinite;
