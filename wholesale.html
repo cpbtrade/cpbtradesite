@@ -113,12 +113,20 @@
     <div class="section-head">
       <div class="eyebrow" style="justify-content:center">Where we're expanding</div>
       <h2>Building relationships across key global markets</h2>
-      <p>Beyond the UK, we're actively looking to build direct wholesale relationships with suppliers and distributors across Europe's leading markets, alongside priority sourcing partnerships in China and Japan.</p>
+      <p>Every wholesale and sourcing relationship we build routes back to our base in Newcastle upon Tyne &mdash; from EU distribution partners to priority sourcing partnerships in China and Japan.</p>
     </div>
     <div class="map-card">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="30.767 241.591 784.077 458.627" id="world-map" class="world-map-svg" role="img" aria-label="Map highlighting CPB Distribution's target wholesale markets across the EU, plus China and Japan">
-<title>Target wholesale markets</title>
-<g>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="30.767 241.591 784.077 458.627" id="world-map" class="world-map-svg" role="img" aria-label="Map showing CPB Distribution's target supply routes from EU wholesale markets, China and Japan into the UK">
+<title>Target supply routes into the UK</title>
+<defs>
+  <marker id="arrow-eu" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="arrow-fill-eu"/>
+  </marker>
+  <marker id="arrow-priority" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="arrow-fill-priority"/>
+  </marker>
+</defs>
+<g class="countries">
     <path id="_somaliland" d="M512.674,502.797l3.526,2.403l1.046-0.052l8.757-3.008l0.994,3.206l-0.701,2.706l-1.893,1.503l-4.729-0.302l-6.769-4.158L512.674,502.797L512.674,502.797z"/>
     <path id="ae" d="M528.466,468.135l0.753,3.008l8.522,0.752l0.596-6.172l1.644-0.897l0.448-2.257l-2.688,0.753l-2.99,4.521L528.466,468.135L528.466,468.135z"/>
     <path id="af" d="M545.85,435.383l1.374,10.771l3.423,0.752l0.32,1.937l-2.455,2.049l4.573,3.691l8.885-3.198l0.709-3.786l5.593-3.491l2.145-8.091l1.599-1.722l-1.659-2.887l5.412-3.347l-0.691-0.968l-2.498,0.155l-0.226,2.299l-3.354-0.033l-0.062-3.068l-1.079-1.288l-1.815,1.649l0.052,1.515l-2.739,1.036l-5.059-0.319l-6.568,6.881L545.85,435.383L545.85,435.383z"/>
@@ -508,30 +516,41 @@
     <path id="zm" d="M459.78,571.656l2.739,3.802l4.244,0.261l1.504,0.829l4.443,0.053l3.829-5.367l10.702-4.789l0.934-4.219l-1.244-6.043l-5.584-3.181l-3.727,0.26l-1.857,4.114l0.053,1.876l4.391,2.136l0.26,4.642l-3.775,0.208l-0.935-1.564l-10.495-4.479l-0.311,3.44l-4.962,0.155L459.78,571.656L459.78,571.656z"/>
     <path id="zw" d="M468.52,578.226l7.755,8.757l5.946,1.513l3.984-6.248l-0.312-8.281l-6.465-3.337l-2.431,1.098l-3.62,5.524l-5.014-0.053L468.52,578.226L468.52,578.226z"/>
 </g>
+  <g class="routes">
+    <path class="route route-eu" d="M429.80,392.70 Q418.29,377.07 406.46,375.80" marker-end="url(#arrow-eu)"/>
+    <path class="route route-eu" d="M410.80,406.00 Q411.72,387.90 404.27,380.34" marker-end="url(#arrow-eu)"/>
+    <path class="route route-eu" d="M435.30,419.00 Q426.83,389.01 405.70,378.37" marker-end="url(#arrow-eu)"/>
+    <path class="route route-eu" d="M400.20,426.20 Q410.86,400.34 402.18,381.79" marker-end="url(#arrow-eu)"/>
+    <path class="route route-eu" d="M418.30,388.80 Q411.69,377.65 406.34,376.54" marker-end="url(#arrow-eu)"/>
+    <path class="route route-eu" d="M447.90,388.70 Q426.46,371.09 406.43,373.94" marker-end="url(#arrow-eu)"/>
+    <path class="route route-eu" d="M417.20,394.40 Q412.37,380.70 405.90,377.94" marker-end="url(#arrow-eu)"/>
+    <path class="route route-eu" d="M440.90,354.00 Q415.33,355.28 403.78,369.22" marker-end="url(#arrow-eu)"/>
+    <path class="route route-eu" d="M389.10,384.80 Q391.89,377.72 392.00,377.68" marker-end="url(#arrow-eu)"/>
+    <path class="route route-eu" d="M436.70,403.10 Q424.03,380.76 406.31,376.68" marker-end="url(#arrow-eu)"/>
+    <path class="route route-priority" d="M635.10,415.60 Q525.98,343.36 406.28,373.19" marker-end="url(#arrow-priority)"/>
+    <path class="route route-priority" d="M720.20,411.00 Q567.40,323.44 406.17,372.80" marker-end="url(#arrow-priority)"/>
+  </g>
+  <g class="route-nodes">
+    <circle class="node node-eu" cx="429.8" cy="392.7" r="2.6"/>
+    <circle class="node node-eu" cx="410.8" cy="406.0" r="2.6"/>
+    <circle class="node node-eu" cx="435.3" cy="419.0" r="2.6"/>
+    <circle class="node node-eu" cx="400.2" cy="426.2" r="2.6"/>
+    <circle class="node node-eu" cx="418.3" cy="388.8" r="2.6"/>
+    <circle class="node node-eu" cx="447.9" cy="388.7" r="2.6"/>
+    <circle class="node node-eu" cx="417.2" cy="394.4" r="2.6"/>
+    <circle class="node node-eu" cx="440.9" cy="354.0" r="2.6"/>
+    <circle class="node node-eu" cx="389.1" cy="384.8" r="2.6"/>
+    <circle class="node node-eu" cx="436.7" cy="403.1" r="2.6"/>
+    <circle class="node node-priority" cx="635.1" cy="415.6" r="2.6"/>
+    <circle class="node node-priority" cx="720.2" cy="411.0" r="2.6"/>
+    <circle class="node node-home" cx="399.0" cy="375.0" r="5.5"/>
+    <circle class="node node-home-ring" cx="399.0" cy="375.0" r="9"/>
+  </g>
 </svg>
       <div class="map-legend">
-        <div class="map-legend-group">
-          <div class="map-legend-title"><span class="map-legend-swatch eu"></span>Target EU Wholesale Markets</div>
-          <div class="map-legend-countries">
-            <span>Germany</span>
-            <span>France</span>
-            <span>Italy</span>
-            <span>Spain</span>
-            <span>Netherlands</span>
-            <span>Poland</span>
-            <span>Belgium</span>
-            <span>Sweden</span>
-            <span>Ireland</span>
-            <span>Austria</span>
-          </div>
-        </div>
-        <div class="map-legend-group">
-          <div class="map-legend-title"><span class="map-legend-swatch priority"></span>Priority Sourcing Partners</div>
-          <div class="map-legend-countries">
-            <span>China</span>
-            <span>Japan</span>
-          </div>
-        </div>
+        <div class="map-legend-item"><span class="map-legend-line eu"></span>EU wholesale distribution routes</div>
+        <div class="map-legend-item"><span class="map-legend-line priority"></span>Priority sourcing routes &mdash; China &amp; Japan</div>
+        <div class="map-legend-item"><span class="map-legend-dot"></span>CPB Distribution &mdash; Newcastle upon Tyne, UK</div>
       </div>
       <p class="map-caption">Map data &copy; Al MacDonald &amp; Fritz Lekschas, licensed CC BY-SA 3.0</p>
     </div>

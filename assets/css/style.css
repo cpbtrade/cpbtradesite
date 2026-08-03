@@ -346,21 +346,40 @@ section.tight { padding: 56px 0; }
   height: auto;
   display: block;
 }
-.world-map-svg path {
+.world-map-svg .countries path {
   fill: #e2ddd0;
   stroke: var(--white);
   stroke-width: 0.6;
 }
-.world-map-svg #de, .world-map-svg #de path, .world-map-svg #es, .world-map-svg #es path,
-.world-map-svg #it, .world-map-svg #it path, .world-map-svg #fr, .world-map-svg #fr path,
-.world-map-svg #nl, .world-map-svg #nl path, .world-map-svg #pl, .world-map-svg #pl path,
-.world-map-svg #be, .world-map-svg #be path, .world-map-svg #se, .world-map-svg #se path,
-.world-map-svg #ie, .world-map-svg #ie path, .world-map-svg #at, .world-map-svg #at path {
-  fill: var(--gold-500);
+.world-map-svg .route {
+  fill: none;
+  stroke-linecap: round;
 }
-.world-map-svg #cn, .world-map-svg #cn path, .world-map-svg #jp, .world-map-svg #jp path {
-  fill: var(--navy-800);
+.world-map-svg .route-eu {
+  stroke: var(--gold-500);
+  stroke-width: 1;
+  opacity: 0.8;
 }
+.world-map-svg .route-priority {
+  stroke: var(--navy-800);
+  stroke-width: 1.2;
+  opacity: 0.85;
+}
+.world-map-svg .node-eu { fill: var(--gold-500); }
+.world-map-svg .node-priority { fill: var(--navy-800); }
+.world-map-svg .node-home {
+  fill: var(--navy-900);
+  stroke: var(--white);
+  stroke-width: 1;
+}
+.world-map-svg .node-home-ring {
+  fill: none;
+  stroke: var(--navy-900);
+  stroke-width: 1;
+  opacity: 0.3;
+}
+.world-map-svg .arrow-fill-eu { fill: var(--gold-500); }
+.world-map-svg .arrow-fill-priority { fill: var(--navy-800); }
 .map-caption {
   font-size: 0.75rem;
   color: var(--ink-soft);
@@ -371,42 +390,37 @@ section.tight { padding: 56px 0; }
 .map-legend {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 28px;
   margin-top: 28px;
   padding-top: 24px;
   border-top: 1px solid var(--line);
 }
-.map-legend-group { flex: 1; min-width: 240px; }
-.map-legend-title {
+.map-legend-item {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-weight: 700;
+  gap: 10px;
   font-size: 0.85rem;
-  color: var(--navy-900);
-  margin-bottom: 12px;
+  font-weight: 600;
+  color: var(--ink-soft);
 }
-.map-legend-swatch {
-  width: 14px;
-  height: 14px;
-  border-radius: 4px;
+.map-legend-line {
+  width: 26px;
+  height: 2px;
+  border-radius: 2px;
   display: inline-block;
   flex-shrink: 0;
 }
-.map-legend-swatch.eu { background: var(--gold-500); }
-.map-legend-swatch.priority { background: var(--navy-800); }
-.map-legend-countries {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.map-legend-countries span {
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--ink-soft);
-  background: var(--paper-dim);
-  padding: 5px 12px;
-  border-radius: 999px;
+.map-legend-line.eu { background: var(--gold-500); }
+.map-legend-line.priority { background: var(--navy-800); }
+.map-legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+  background: var(--navy-900);
+  border: 2px solid var(--white);
+  box-shadow: 0 0 0 1px var(--navy-900);
 }
 
 /* ---------- Timeline ---------- */
