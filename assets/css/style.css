@@ -11,8 +11,6 @@
   --gold-500: #c9972f;
   --gold-400: #dcae4d;
   --gold-300: #e8c477;
-  --coral-500: #e2734f;
-  --coral-400: #ea8c6d;
   --paper: #f7f5f0;
   --paper-dim: #ece8de;
   --ink: #10151f;
@@ -361,54 +359,44 @@ section.tight { padding: 56px 0; }
 }
 .world-map-svg .countries path {
   fill: #263c60;
-  stroke: rgba(255,255,255,0.07);
-  stroke-width: 0.6;
+  stroke: rgba(255,255,255,0.1);
+  stroke-width: 0.15;
   transition: fill 0.2s ease;
 }
 .world-map-svg .route {
   fill: none;
   stroke-linecap: round;
-  stroke-dasharray: 3 4;
-  animation: route-flow 16s linear infinite;
+  stroke-dasharray: 0.7 0.9;
+  animation: route-flow 10s linear infinite;
   cursor: pointer;
   transition: stroke-width 0.2s ease, opacity 0.2s ease;
 }
-.world-map-svg .route:hover { stroke-width: 2.6; opacity: 1; }
+.world-map-svg .route:hover { stroke-width: 0.6; opacity: 1; }
 .world-map-svg .route-eu {
   stroke: var(--gold-400);
-  stroke-width: 1;
-  opacity: 0.75;
-}
-.world-map-svg .route-priority {
-  stroke: var(--coral-400);
-  stroke-width: 1.2;
+  stroke-width: 0.24;
   opacity: 0.8;
 }
 @keyframes route-flow {
-  to { stroke-dashoffset: -280; }
+  to { stroke-dashoffset: -64; }
 }
-.world-map-svg .node-eu, .world-map-svg .node-priority {
+.world-map-svg .node-eu {
   cursor: pointer;
+  fill: var(--gold-400);
   transform-box: fill-box;
   transform-origin: center;
   transition: transform 0.2s ease, filter 0.2s ease;
 }
-.world-map-svg .node-eu { fill: var(--gold-400); }
-.world-map-svg .node-priority { fill: var(--coral-400); }
 .world-map-svg .node-eu:hover {
-  transform: scale(1.9);
-  filter: drop-shadow(0 0 5px var(--gold-400));
-}
-.world-map-svg .node-priority:hover {
-  transform: scale(1.9);
-  filter: drop-shadow(0 0 5px var(--coral-400));
+  transform: scale(2.2);
+  filter: drop-shadow(0 0 1.2px var(--gold-400));
 }
 .world-map-svg .node-home {
   fill: var(--gold-300);
   stroke: var(--navy-950);
-  stroke-width: 1;
+  stroke-width: 0.24;
   cursor: pointer;
-  filter: drop-shadow(0 0 5px rgba(232,196,119,0.65));
+  filter: drop-shadow(0 0 1.2px rgba(232,196,119,0.65));
   transform-box: fill-box;
   transform-origin: center;
   transition: transform 0.2s ease;
@@ -417,7 +405,7 @@ section.tight { padding: 56px 0; }
 .world-map-svg .node-home-ring {
   fill: none;
   stroke: var(--gold-300);
-  stroke-width: 1;
+  stroke-width: 0.24;
   transform-box: fill-box;
   transform-origin: center;
   animation: pulse-ring 2.6s ease-out infinite;
@@ -427,7 +415,6 @@ section.tight { padding: 56px 0; }
   100% { transform: scale(2.4); opacity: 0; }
 }
 .world-map-svg .arrow-fill-eu { fill: var(--gold-400); }
-.world-map-svg .arrow-fill-priority { fill: var(--coral-400); }
 @media (prefers-reduced-motion: reduce) {
   .world-map-svg .route, .world-map-svg .node-home-ring { animation: none; }
 }
