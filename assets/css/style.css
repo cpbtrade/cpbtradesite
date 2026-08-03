@@ -358,6 +358,84 @@ section.tight { padding: 56px 0; }
   background: var(--gold-500);
 }
 
+/* ---------- World map ---------- */
+.map-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  max-width: 980px;
+  margin: 0 auto;
+}
+.world-map-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.world-map-svg path {
+  fill: #e2ddd0;
+  stroke: var(--white);
+  stroke-width: 0.6;
+}
+.world-map-svg #de, .world-map-svg #de path, .world-map-svg #es, .world-map-svg #es path,
+.world-map-svg #it, .world-map-svg #it path, .world-map-svg #fr, .world-map-svg #fr path,
+.world-map-svg #nl, .world-map-svg #nl path, .world-map-svg #pl, .world-map-svg #pl path,
+.world-map-svg #be, .world-map-svg #be path, .world-map-svg #se, .world-map-svg #se path,
+.world-map-svg #ie, .world-map-svg #ie path, .world-map-svg #at, .world-map-svg #at path {
+  fill: var(--gold-500);
+}
+.world-map-svg #cn, .world-map-svg #cn path, .world-map-svg #jp, .world-map-svg #jp path {
+  fill: var(--navy-800);
+}
+.map-caption {
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  opacity: 0.7;
+  margin-top: 14px;
+  text-align: center;
+}
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.map-legend-group { flex: 1; min-width: 240px; }
+.map-legend-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--navy-900);
+  margin-bottom: 12px;
+}
+.map-legend-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.map-legend-swatch.eu { background: var(--gold-500); }
+.map-legend-swatch.priority { background: var(--navy-800); }
+.map-legend-countries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.map-legend-countries span {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  background: var(--paper-dim);
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
 /* ---------- Timeline ---------- */
 .timeline {
   position: relative;
