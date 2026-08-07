@@ -162,13 +162,18 @@ section.tight { padding: 56px 0; }
   height: 38px;
   border-radius: 8px;
   background: linear-gradient(135deg, var(--navy-900), var(--navy-700));
-  color: var(--gold-400);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 800;
-  font-size: 0.95rem;
-  letter-spacing: -0.02em;
+  padding: 6px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.brand .mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 .brand .sub {
   display: block;
