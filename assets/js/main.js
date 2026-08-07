@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
         body.push(labelText + ": " + field.value);
       });
       var mailto =
-        "mailto:carlfbaretail@gmail.com" +
+        "mailto:carl.brown@cpbdistribution.co.uk" +
         "?subject=" + encodeURIComponent(subject) +
         "&body=" + encodeURIComponent(body.join("\n"));
 
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (status) {
         status.textContent =
-          "Opening your email client to send this enquiry to CPB Distribution. If nothing opens, email carlfbaretail@gmail.com directly.";
+          "Opening your email client to send this enquiry to CPB Distribution. If nothing opens, email carl.brown@cpbdistribution.co.uk directly.";
         status.classList.add("show", "ok");
       }
       form.reset();
